@@ -1,0 +1,20 @@
+.photo-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.gallery-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery-photo img {
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .photo-gallery {
+    flex-direction: column;
+  }
+}
