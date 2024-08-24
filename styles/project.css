@@ -112,12 +112,26 @@
   margin-inline-end: 0.5rem;
   margin-bottom: 0.5rem;
   border-style: solid;
+  text-align: center;
+  background-color: white;
+}
+
+.tech:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 hr {
   border-style: solid;
   border-color: #e5e7eb;
   border-width: 0.1px;
+}
+
+@media (max-width: 768px) {
+  .tech-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media (min-width: 1024px) {

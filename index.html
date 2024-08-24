@@ -13,35 +13,35 @@
     <title>Pranay's Portfolio</title>
   </head>
 
-  <body>
-    <div class="container">
-      <header>
-        <ul class="nav nav-tabs mb-4">
-          <li class="nav-item">
-            <a class="nav-link active" onclick="openSection(event, 'home')"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="openSection(event, 'projects')"
-              >My Projects</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="openSection(event, 'contact-me')"
-              >Contact Me</a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" onclick="openSection(event, 'gallery')"
-              >Gallery</a
-            >
-          </li>
-        </ul>
-      </header>
+  <body class="container">
+    <header>
+      <ul class="nav nav-tabs mb-4">
+        <li class="nav-item">
+          <a class="nav-link active" onclick="openSection(event, 'home')"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openSection(event, 'projects')"
+            >My Projects</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openSection(event, 'contact-me')"
+            >Contact Me</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" onclick="openSection(event, 'gallery')"
+            >Gallery</a
+          >
+        </li>
+      </ul>
+    </header>
 
-      <main>
-        <div id="home" class="tabcontent">
+    <main>
+      <div id="home" class="tabcontent">
+        <div class="home-layout">
           <div class="home-content">
             <p class="intro">Hi, I'm</p>
             <p class="name">Pranay Usgaonkar.</p>
@@ -50,473 +50,491 @@
               leads to the success of the overall product
             </p>
           </div>
+          <div className="gallery-photo">
+            <img
+              src="./public/Pranay_casual.jpg"
+              alt="W3Schools.com"
+              width="50%"
+              height="100%"
+            />
+          </div>
         </div>
+      </div>
 
-        <div id="projects" class="tabcontent">
-          <div class="grid">
-            <div class="card">
-              <header class="card-header">
-                <div class="card-title-section">
-                  <h5 class="card-heading">Credit Advisory Application</h5>
-                  <p>Nov 2023-Aug 2023</p>
-                </div>
-                <div class="domain-wrapper">
-                  <span class="domain">Fintech</span>
-                </div>
-              </header>
+      <div id="projects" class="tabcontent">
+        <div class="grid">
+          <div class="card">
+            <header class="card-header">
+              <div class="card-title-section">
+                <h5 class="card-heading">Credit Advisory Application</h5>
+                <p>Nov 2023-Aug 2023</p>
+              </div>
+              <div class="domain-wrapper">
+                <span class="domain">Fintech</span>
+              </div>
+            </header>
+            <hr />
+            <main class="card-body">
+              <p class="card-desc">
+                A tool designed for banks in Switzerland to assess and determine
+                loan eligibility for applicants efficiently.
+              </p>
+              <p class="contributions card-desc">
+                <span>Contributions:</span>
+              </p>
+              <ul>
+                <li class="list-disc">
+                  Led the development and implementation of the project along
+                  with GIT hooks, unit tests, and conventional commits.
+                </li>
+                <li class="list-disc">
+                  Architected React project and executed Figma wireframe to
+                  design conversion.
+                </li>
+                <li class="list-disc">
+                  Conducted successful proofs-of-concept on language
+                  translations using i18next, React error boundary, theming in
+                  Tailwind, and so on, and implemented it in the project.
+                </li>
+              </ul>
+              <p></p>
+            </main>
+            <footer>
               <hr />
-              <main class="card-body">
-                <p class="card-desc">
-                  A tool designed for banks in Switzerland to assess and
-                  determine loan eligibility for applicants efficiently.
-                </p>
-                <p class="contributions card-desc">
-                  <span>Contributions:</span>
-                </p>
-                <ul>
-                  <li class="list-disc">
-                    Led the development and implementation of the project along
-                    with GIT hooks, unit tests, and conventional commits.
-                  </li>
-                  <li class="list-disc">
-                    Architected React project and executed Figma wireframe to
-                    design conversion.
-                  </li>
-                  <li class="list-disc">
-                    Conducted successful proofs-of-concept on language
-                    translations using i18next, React error boundary, theming in
-                    Tailwind, and so on, and implemented it in the project.
-                  </li>
-                </ul>
-                <p></p>
-              </main>
-              <footer>
-                <hr />
-                <div class="tech-wrapper">
-                  <span class="tech">React</span>
-                </div>
-              </footer>
+              <div class="tech-wrapper">
+                <span class="tech">React</span>
+              </div>
+            </footer>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <div class="card-title-section">
+                <h5 class="card-heading">Training Management System</h5>
+                <p>Jun 2023-Nov 2023</p>
+              </div>
+              <div class="domain-wrapper">
+                <span class="domain">Internal company project</span>
+              </div>
+            </header>
+            <hr />
+            <main class="card-body">
+              <p class="card-desc">
+                An internal system designed to streamline training processes and
+                minimize administrative overhead, enhancing efficiency and
+                organisation within the company.
+              </p>
+              <p class="contributions card-desc">
+                <span>Contributions:</span>
+              </p>
+              <ul>
+                <li class="list-disc">
+                  Streamlined Tailwind CSS and Daisy UI framework for styling
+                  and enhanced component consistency, resulting in a 40%
+                  reduction in development time and increased code
+                  maintainability.
+                </li>
+                <li class="list-disc">
+                  Implemented auth flow (Sign in, Signup, forgot password
+                  functionality, Route Guards, logout.
+                </li>
+                <li class="list-disc">
+                  Wrote unit test cases using React Testing Library and
+                  integrated to run with a pre-push GIT hook using Husky which
+                  resulted in an 80% reduction of issues in code.
+                </li>
+                <li class="list-disc">
+                  Configured the project to strictly follow conventional commit
+                  messages using a pre-commit hook and ensured 100% consistency
+                  in GIT commit history which aided team developers in
+                  understanding the commits.
+                </li>
+              </ul>
+              <p></p>
+            </main>
+            <footer>
+              <hr />
+              <div class="tech-wrapper">
+                <span class="tech">React</span>
+                <span class="tech">NestJS</span>
+                <span class="tech">PostgreSQL</span>
+              </div>
+            </footer>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <div class="card-title-section">
+                <h5 class="card-heading">Healthcare Tracker</h5>
+                <p>April 2023-Jun 2023</p>
+              </div>
+              <div class="domain-wrapper">
+                <span class="domain">Healthcare</span>
+              </div>
+            </header>
+            <hr />
+            <main class="card-body">
+              <p class="card-desc">
+                An innovative solution catering to healthcare professionals'
+                needs, enabling effortless organisation and retrieval of photos,
+                videos, and files while providing customisation sharing options
+                for better collaboration.
+              </p>
+              <p class="contributions card-desc">
+                <span>Contributions:</span>
+              </p>
+              <ul>
+                <li class="list-disc">
+                  Assessed Vue.js code quality and implemented best practices
+                  such as modularisation, component re-usability, a concept
+                  called “slots,” and optimised state management; these
+                  enhancements resulted in a 25% increase in development
+                  efficiency and code maintainability.
+                </li>
+                <li class="list-disc">
+                  Comprehended the application architecture and services and
+                  documented significant components and APIs, which helped
+                  mobile developers replicate the elements in the Flutter
+                  application, accelerating the development process by 50%.
+                </li>
+                <li class="list-disc">
+                  Mentored juniors in their development work.
+                </li>
+              </ul>
+              <p></p>
+            </main>
+            <footer>
+              <hr />
+              <div class="tech-wrapper">
+                <span class="tech">VueJS</span>
+              </div>
+            </footer>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <div class="card-title-section">
+                <h5 class="card-heading">Car Shopping Application</h5>
+                <p>Jan 2022-March 2023</p>
+              </div>
+              <div class="domain-wrapper">
+                <span class="domain">Automotive eCommerce</span>
+              </div>
+            </header>
+            <hr />
+            <main class="card-body">
+              <p class="card-desc">
+                This application offers personalise services for car shopping,
+                purchasing, and trade-ins across the United States.
+              </p>
+              <p class="contributions card-desc">
+                <span>Contributions:</span>
+              </p>
+              <ul>
+                <li class="list-disc">
+                  Led&nbsp;the application migration from Angular to Remix along
+                  with additional functionalities and maintenance.
+                </li>
+                <li class="list-disc">
+                  Implemented&nbsp;performance optimisation techniques
+                  by&nbsp;strengthening&nbsp;the user login flow with Refresh
+                  token and “Remember-me”
+                  functionalities,&nbsp;caching&nbsp;pages and
+                  images,&nbsp;adding&nbsp;loggers and fetchers to optimise data
+                  retrieval and reduce UI loading time,
+                  and&nbsp;using&nbsp;optimistic UI to display a pending state
+                  during server code execution.
+                </li>
+                <li class="list-disc">
+                  Engineered&nbsp;a robust filtering mechanism
+                  that&nbsp;updated&nbsp;search results based on user
+                  interactions and developed favourite car functionality
+                </li>
+                <li class="list-disc">
+                  Configured&nbsp;different
+                  environments,&nbsp;established&nbsp;error boundaries for 500
+                  and 404 errors, and&nbsp;engaged&nbsp;closely with the AWS
+                  team to automate application deployments with commit messages.
+                </li>
+              </ul>
+              <p></p>
+            </main>
+            <footer>
+              <hr />
+              <div class="tech-wrapper">
+                <span class="tech">RemixJS</span>
+              </div>
+            </footer>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <div class="card-title-section">
+                <h5 class="card-heading">Keepfit</h5>
+                <p>Oct 2021-Dec 2021</p>
+              </div>
+              <div class="domain-wrapper">
+                <span class="domain">Corporate Wellness</span>
+              </div>
+            </header>
+            <hr />
+            <main class="card-body">
+              <p class="card-desc">
+                An innovative internal initiative designed to boost employee
+                engagement and motivation. The platform allowed participants to
+                track their progress, compete with colleagues, and compare
+                performance metrics. This project achieved a 60% employee
+                engagement rate, fostering a more active and connected
+                workplace.
+              </p>
+              <p class="contributions card-desc">
+                <span>Contributions:</span>
+              </p>
+              <ul>
+                <li class="list-disc">
+                  Constructed different pages and components which will increase
+                  the employee engagement in the competetions
+                </li>
+                <li class="list-disc">
+                  Built an admin dashboard to control site settings and applied
+                  role-based authorisation for different roles.
+                </li>
+                <li class="list-disc">
+                  Integrated security features for routes in the backend and
+                  designed the database for various functionalities along with`
+                  migrations.
+                </li>
+              </ul>
+              <p></p>
+            </main>
+            <footer>
+              <hr />
+              <div class="tech-wrapper">
+                <span class="tech">React</span>
+                <span class="tech">NestJS</span>
+                <span class="tech">PostgreSQL</span>
+              </div>
+            </footer>
+          </div>
+
+          <div class="card">
+            <header class="card-header">
+              <div class="card-title-section">
+                <h5 class="card-heading">Real estate Crawlers and Scrapers</h5>
+                <p>Sept 2019-Sept 2021</p>
+              </div>
+              <div class="domain-wrapper">
+                <span class="domain">Real Estate</span>
+              </div>
+            </header>
+            <hr />
+            <main class="card-body">
+              <p class="card-desc">
+                A project to crawl and scrap data into usable form into database
+                which was used by services team to provide it to various real
+                estate investments decision making tools.
+              </p>
+              <p class="contributions card-desc">
+                <span>Contributions:</span>
+              </p>
+              <ul>
+                <li class="list-disc">
+                  Led&nbsp;the design and maintenance of over 10 NodeJS web
+                  crawlers and scrapers,&nbsp;leveraged&nbsp;MySQL to store HTML
+                  and scraped data, and&nbsp;consolidated&nbsp;data in MSSQL
+                  using stored procedures to empower teams with valuable data
+                  for strategic decision-making.
+                </li>
+                <li class="list-disc">
+                  Developed&nbsp;and&nbsp;automated&nbsp;various command-line
+                  NodeJS applications (including downloading images of real
+                  estate properties and saving them in a proper folder
+                  hierarchy) to receive data regularly,
+                  which&nbsp;reduced&nbsp;human interaction.
+                </li>
+                <li class="list-disc">
+                  Architected&nbsp;the ReactJS UI to crawl, scrape, and
+                  consolidate data,&nbsp;coded&nbsp;ExpressJS REST APIs along
+                  with Swagger documentation to provide data as requested,
+                  and&nbsp;integrated&nbsp;3rd party APIs.
+                </li>
+                <li class="list-disc">
+                  Managed&nbsp;web crawlers to run on AWS EC2
+                  instances,&nbsp;set&nbsp;CloudWatch metrics with AWS SNS
+                  service, and&nbsp;deployed&nbsp;consolidated data in MSSQL to
+                  different servers using the Redgate tool,
+                  which&nbsp;accelerated&nbsp;SQL comparisons.
+                </li>
+              </ul>
+              <p></p>
+            </main>
+            <footer>
+              <hr />
+              <div class="tech-wrapper">
+                <span class="tech">NodeJs</span>
+                <span class="tech">MySql</span>
+                <span class="tech">MSSql</span>
+                <span class="tech">ExpressJS</span>
+                <span class="tech">React</span>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div id="contact-me" class="tabcontent">contact-me</div>
+      <div id="gallery" class="tabcontent">
+        <div class="photo-gallery">
+          <div className="gallery-column">
+            <div className="gallery-photo">
+              <img
+                src="./public/images/react.jpg"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
             </div>
 
-            <div class="card">
-              <header class="card-header">
-                <div class="card-title-section">
-                  <h5 class="card-heading">Training Management System</h5>
-                  <p>Jun 2023-Nov 2023</p>
-                </div>
-                <div class="domain-wrapper">
-                  <span class="domain">Internal company project</span>
-                </div>
-              </header>
-              <hr />
-              <main class="card-body">
-                <p class="card-desc">
-                  An internal system designed to streamline training processes
-                  and minimize administrative overhead, enhancing efficiency and
-                  organisation within the company.
-                </p>
-                <p class="contributions card-desc">
-                  <span>Contributions:</span>
-                </p>
-                <ul>
-                  <li class="list-disc">
-                    Streamlined Tailwind CSS and Daisy UI framework for styling
-                    and enhanced component consistency, resulting in a 40%
-                    reduction in development time and increased code
-                    maintainability.
-                  </li>
-                  <li class="list-disc">
-                    Implemented auth flow (Sign in, Signup, forgot password
-                    functionality, Route Guards, logout.
-                  </li>
-                  <li class="list-disc">
-                    Wrote unit test cases using React Testing Library and
-                    integrated to run with a pre-push GIT hook using Husky which
-                    resulted in an 80% reduction of issues in code.
-                  </li>
-                  <li class="list-disc">
-                    Configured the project to strictly follow conventional
-                    commit messages using a pre-commit hook and ensured 100%
-                    consistency in GIT commit history which aided team
-                    developers in understanding the commits.
-                  </li>
-                </ul>
-                <p></p>
-              </main>
-              <footer>
-                <hr />
-                <div class="tech-wrapper">
-                  <span class="tech">React</span><span class="tech">NestJS</span
-                  ><span class="tech">PostgreSQL</span>
-                </div>
-              </footer>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/ts.jpeg"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/csr-vs-ssr-1.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/javascript.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/jest.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+          </div>
+
+          <div className="gallery-column">
+            <div className="gallery-photo">
+              <img
+                src="./public/images/js.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/mysql.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/Nestjs_hero1.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
             </div>
 
-            <div class="card">
-              <header class="card-header">
-                <div class="card-title-section">
-                  <h5 class="card-heading">Healthcare Tracker</h5>
-                  <p>April 2023-Jun 2023</p>
-                </div>
-                <div class="domain-wrapper">
-                  <span class="domain">Healthcare</span>
-                </div>
-              </header>
-              <hr />
-              <main class="card-body">
-                <p class="card-desc">
-                  An innovative solution catering to healthcare professionals'
-                  needs, enabling effortless organisation and retrieval of
-                  photos, videos, and files while providing customisation
-                  sharing options for better collaboration.
-                </p>
-                <p class="contributions card-desc">
-                  <span>Contributions:</span>
-                </p>
-                <ul>
-                  <li class="list-disc">
-                    Assessed Vue.js code quality and implemented best practices
-                    such as modularisation, component re-usability, a concept
-                    called “slots,” and optimised state management; these
-                    enhancements resulted in a 25% increase in development
-                    efficiency and code maintainability.
-                  </li>
-                  <li class="list-disc">
-                    Comprehended the application architecture and services and
-                    documented significant components and APIs, which helped
-                    mobile developers replicate the elements in the Flutter
-                    application, accelerating the development process by 50%.
-                  </li>
-                  <li class="list-disc">
-                    Mentored juniors in their development work.
-                  </li>
-                </ul>
-                <p></p>
-              </main>
-              <footer>
-                <hr />
-                <div class="tech-wrapper">
-                  <span class="tech">VueJS</span>
-                </div>
-              </footer>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/express.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
             </div>
-
-            <div class="card">
-              <header class="card-header">
-                <div class="card-title-section">
-                  <h5 class="card-heading">Car Shopping Application</h5>
-                  <p>Jan 2022-March 2023</p>
-                </div>
-                <div class="domain-wrapper">
-                  <span class="domain">Automotive eCommerce</span>
-                </div>
-              </header>
-              <hr />
-              <main class="card-body">
-                <p class="card-desc">
-                  This application offers personalise services for car shopping,
-                  purchasing, and trade-ins across the United States.
-                </p>
-                <p class="contributions card-desc">
-                  <span>Contributions:</span>
-                </p>
-                <ul>
-                  <li class="list-disc">
-                    Led&nbsp;the application migration from Angular to Remix
-                    along with additional functionalities and maintenance.
-                  </li>
-                  <li class="list-disc">
-                    Implemented&nbsp;performance optimisation techniques
-                    by&nbsp;strengthening&nbsp;the user login flow with Refresh
-                    token and “Remember-me”
-                    functionalities,&nbsp;caching&nbsp;pages and
-                    images,&nbsp;adding&nbsp;loggers and fetchers to optimise
-                    data retrieval and reduce UI loading time,
-                    and&nbsp;using&nbsp;optimistic UI to display a pending state
-                    during server code execution.
-                  </li>
-                  <li class="list-disc">
-                    Engineered&nbsp;a robust filtering mechanism
-                    that&nbsp;updated&nbsp;search results based on user
-                    interactions and developed favourite car functionality
-                  </li>
-                  <li class="list-disc">
-                    Configured&nbsp;different
-                    environments,&nbsp;established&nbsp;error boundaries for 500
-                    and 404 errors, and&nbsp;engaged&nbsp;closely with the AWS
-                    team to automate application deployments with commit
-                    messages.
-                  </li>
-                </ul>
-                <p></p>
-              </main>
-              <footer>
-                <hr />
-                <div class="tech-wrapper">
-                  <span class="tech">RemixJS</span>
-                </div>
-              </footer>
+          </div>
+          <div className="gallery-column">
+            <div className="gallery-photo">
+              <img
+                src="./public/images/nodejs.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
             </div>
-
-            <div class="card">
-              <header class="card-header">
-                <div class="card-title-section">
-                  <h5 class="card-heading">Keepfit</h5>
-                  <p>Oct 2021-Dec 2021</p>
-                </div>
-                <div class="domain-wrapper">
-                  <span class="domain">Corporate Wellness</span>
-                </div>
-              </header>
-              <hr />
-              <main class="card-body">
-                <p class="card-desc">
-                  An innovative internal initiative designed to boost employee
-                  engagement and motivation. The platform allowed participants
-                  to track their progress, compete with colleagues, and compare
-                  performance metrics. This project achieved a 60% employee
-                  engagement rate, fostering a more active and connected
-                  workplace.
-                </p>
-                <p class="contributions card-desc">
-                  <span>Contributions:</span>
-                </p>
-                <ul>
-                  <li class="list-disc">
-                    Constructed different pages and components which will
-                    increase the employee engagement in the competetions
-                  </li>
-                  <li class="list-disc">
-                    Built an admin dashboard to control site settings and
-                    applied role-based authorisation for different roles.
-                  </li>
-                  <li class="list-disc">
-                    Integrated security features for routes in the backend and
-                    designed the database for various functionalities along
-                    with` migrations.
-                  </li>
-                </ul>
-                <p></p>
-              </main>
-              <footer>
-                <hr />
-                <div class="tech-wrapper">
-                  <span class="tech">React</span><span class="tech">NestJS</span
-                  ><span class="tech">PostgreSQL</span>
-                </div>
-              </footer>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/postgres.jpeg"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
             </div>
-
-            <div class="card">
-              <header class="card-header">
-                <div class="card-title-section">
-                  <h5 class="card-heading">
-                    Real estate Crawlers and Scrapers
-                  </h5>
-                  <p>Sept 2019-Sept 2021</p>
-                </div>
-                <div class="domain-wrapper">
-                  <span class="domain">Real Estate</span>
-                </div>
-              </header>
-              <hr />
-              <main class="card-body">
-                <p class="card-desc">
-                  A project to crawl and scrap data into usable form into
-                  database which was used by services team to provide it to
-                  various real estate investments decision making tools.
-                </p>
-                <p class="contributions card-desc">
-                  <span>Contributions:</span>
-                </p>
-                <ul>
-                  <li class="list-disc">
-                    Led&nbsp;the design and maintenance of over 10 NodeJS web
-                    crawlers and scrapers,&nbsp;leveraged&nbsp;MySQL to store
-                    HTML and scraped data, and&nbsp;consolidated&nbsp;data in
-                    MSSQL using stored procedures to empower teams with valuable
-                    data for strategic decision-making.
-                  </li>
-                  <li class="list-disc">
-                    Developed&nbsp;and&nbsp;automated&nbsp;various command-line
-                    NodeJS applications (including downloading images of real
-                    estate properties and saving them in a proper folder
-                    hierarchy) to receive data regularly,
-                    which&nbsp;reduced&nbsp;human interaction.
-                  </li>
-                  <li class="list-disc">
-                    Architected&nbsp;the ReactJS UI to crawl, scrape, and
-                    consolidate data,&nbsp;coded&nbsp;ExpressJS REST APIs along
-                    with Swagger documentation to provide data as requested,
-                    and&nbsp;integrated&nbsp;3rd party APIs.
-                  </li>
-                  <li class="list-disc">
-                    Managed&nbsp;web crawlers to run on AWS EC2
-                    instances,&nbsp;set&nbsp;CloudWatch metrics with AWS SNS
-                    service, and&nbsp;deployed&nbsp;consolidated data in MSSQL
-                    to different servers using the Redgate tool,
-                    which&nbsp;accelerated&nbsp;SQL comparisons.
-                  </li>
-                </ul>
-                <p></p>
-              </main>
-              <footer>
-                <hr />
-                <div class="tech-wrapper">
-                  <span class="tech">NodeJs</span><span class="tech">MySql</span
-                  ><span class="tech">MSSql</span
-                  ><span class="tech">ExpressJS</span
-                  ><span class="tech">React</span>
-                </div>
-              </footer>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/remix.jpeg"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/angular.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/redux.jpeg"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+          </div>
+          <div className="gallery-column">
+            <div className="gallery-photo">
+              <img
+                src="./public/images/sqlserver.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/tailwindcss.png"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
+            </div>
+            <div className="gallery-photo">
+              <img
+                src="./public/images/vuejs.jpeg"
+                alt="W3Schools.com"
+                width="100%"
+                height="100%"
+              />
             </div>
           </div>
         </div>
-
-        <div id="contact-me" class="tabcontent">contact-me</div>
-        <div id="gallery" class="tabcontent">
-          <div class="photo-gallery">
-            <div className="gallery-column">
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/300x200/000/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/400x300/00ff00/000"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/600x400/0000ff/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/600x400/0000ff/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/600x400/0000ff/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/600x400/0000ff/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/600x400/0000ff/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-            </div>
-
-            <div className="gallery-column">
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/250x150/9966cc/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/150x100/ff9933/000"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/500x400/ff6699/000"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-            </div>
-            <div className="gallery-column">
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/250x150/9966cc/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/150x100/ff9933/000"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/950x750/cc9966/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-            </div>
-            <div className="gallery-column">
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/250x150/9966cc/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/150x100/ff9933/000"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-              <div className="gallery-photo">
-                <img
-                  src="https://dummyimage.com/950x750/cc9966/fff"
-                  alt="W3Schools.com"
-                  width="100%"
-                  height="100%"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
 
     <script src="scripts/manipulateDom.js"></script>
   </body>
