@@ -1,0 +1,23 @@
+.contact-me {
+  text-align: center;
+  width: 75%;
+  margin: auto;
+  /* height: 100vh; */
+  /* min-height: calc(100vh - 51px); */
+}
+
+.contact-links {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.contact-me span {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 300;
+}
+
+.github-link {
+  margin-top: 20px;
+}
