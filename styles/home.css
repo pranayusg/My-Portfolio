@@ -7,11 +7,6 @@
   display: flex;
 }
 
-.home-content {
-  /* min-height: 50vh;
-  height: auto; */
-}
-
 .intro {
   font-size: 1.125rem; /* 18px */
   line-height: 1.75rem; /* 28px */
@@ -25,6 +20,11 @@
   line-height: 1;
   margin-top: 1.125rem; /* 18px */
   margin-bottom: 0;
+}
+
+.education {
+  margin-top: 50px;
+  font-size: 1.4rem;
 }
 
 .description {

@@ -2,22 +2,35 @@
   text-align: center;
   width: 75%;
   margin: auto;
-  /* height: 100vh; */
-  /* min-height: calc(100vh - 51px); */
+  margin-top: 10%;
+
+  span {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  table {
+    margin-top: 2rem;
+
+    td,
+    th {
+      width: 50%;
+      border: 3px solid #ccb7b7;
+      text-align: center;
+      padding: 10px;
+    }
+  }
 }
 
-.contact-links {
-  display: flex;
-  list-style-type: none;
-  justify-content: center;
+@media (max-width: 768px) {
+  td a img {
+    width: 25%;
+  }
 }
 
-.contact-me span {
-  font-size: 1.8rem;
-  font-style: italic;
-  font-weight: 300;
-}
-
-.github-link {
-  margin-top: 20px;
+@media (max-width: 400px) {
+  td a img {
+    width: 50%;
+  }
 }

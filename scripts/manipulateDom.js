@@ -1,4 +1,4 @@
-document.getElementById("contact-me").style.display = "block";
+document.getElementById("home").style.display = "block";
 
 function openSection(evt, section) {
   var i, tabcontent, tablinks;
